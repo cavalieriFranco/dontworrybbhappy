@@ -1,23 +1,26 @@
 import '../bootstrap/css/bootstrap.min.css';
+import { Icon } from 'semantic-ui-react';
+import './NavBar.css';
 
-function NavBar() {
+const NavBar = () => {
     return (
         
-      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdW2TPES2a7-uQLhgiyKvntWb1MUzTGYDiJg&usqp=CAU" alt="logo" />
-        <div class="container-fluid">
-          <a class="navbar-brand" href="">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-lg navbar-light bg-warning">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdW2TPES2a7-uQLhgiyKvntWb1MUzTGYDiJg&usqp=CAU" className='imagenInicio'alt="logo" />
+        <div className="container-fluid">
+          <a className="navbar-brand" href="index.html">Home</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="">Todo para tu Bebe</a>
-              <a class="nav-link" href="">Para MaPadres</a>
-              <a class="nav-link" href="">Nosotros</a>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-link" href="index.html">Todo para tu Bebe</a>
+              <a className="nav-link" href="index.html">Para MaPadres</a>
+              <a className="nav-link" href="index.html">Nosotros</a>
             </div>
           </div>
         </div>
+        <Icon name='cart arrow down' size='huge'/>
       </nav>
     );
   }
