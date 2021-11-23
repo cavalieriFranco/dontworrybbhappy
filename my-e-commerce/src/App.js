@@ -1,15 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 
 import Header from './components/Header';
-import ItemList from './components/ItemList';
+import ItemList from './components/ItemListContainer';
 
 
+const App = () => {
 
-
-class App extends Component {
-  render (){
-      return(
+  return (
         <div className='App'>
             <Header 
             title="Don't Worry Bb Happy"
@@ -33,7 +31,7 @@ class App extends Component {
                 img="https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"/>
             </div>
         </div>
-      )}
+  )
 }
 
 export default App;

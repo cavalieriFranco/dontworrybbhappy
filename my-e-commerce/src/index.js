@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import NavBar from './components/NavBar';
 
+
 import 'semantic-ui-css/semantic.min.css';
 
 ReactDOM.render(
