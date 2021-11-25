@@ -2,8 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Header from './components/Header';
-import ItemList from './components/ItemListContainer';
-
+import ItemListContainer from './components/ItemListContainer';
 
 const App = () => {
 
@@ -14,17 +13,17 @@ const App = () => {
             />
 
             <div className='User-Section'>
-               <ItemList
+               <ItemListContainer
                 name='Pañales Huggies Recien Nacido' 
                 date='40 unidades' 
                 description='$850' 
                 img="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"/>
-               <ItemList
+               <ItemListContainer
                 name='Esterilizador y Calentador' 
                 date='Apto Mamaderas, tetinas y pezoneras' 
                 description='$3500' 
                 img="https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"/>
-              <ItemList
+              <ItemListContainer
                 name='Practicuna Colecho' 
                 date='Hasta 10kg' 
                 description='$15800' 

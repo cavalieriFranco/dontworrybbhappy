@@ -1,0 +1,14 @@
+.ItemsContainer{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+    padding:25px;
+}
+
+.ItemsCards{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin:20px;
+}
