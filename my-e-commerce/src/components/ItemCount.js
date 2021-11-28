@@ -2,24 +2,26 @@ import React, {useState} from 'react';
 import './ItemCount.css';
 
 
-const ItemCount = () => {
-  const [counter, setCounter] = useState (0);
+const ItemCount = ({stock, initial, onAdd}) => {
+  const [counter, setCounter] = useState (initial);
 
-  const handlerCounterUp = () =>{
-    if (counter <= 9) {setCounter (counter + 1);
+  const sumaCounter = () =>{
+    if (counter < stock) {
+      setCounter (counter + 1);
     }
   }
  
-  const handlerCounterDown = () =>{
-    if (counter >=1) {setCounter (counter -1);
+  const restaCounter = () =>{
+    if (counter > 0) {
+      setCounter (counter -1);
     }
   }
     return (
         <div className='CounterSection'>
           <div className='btn-section'>
-            <button onClick={handlerCounterUp}>Agregar</button>
+            <button onClick={sumaCounter}>Agregar</button>
             <p> Cantidad : {counter}</p>
-            <button onClick={handlerCounterDown}>Quitar</button>
+            <button onClick={restaCounter}>Quitar</button>
           </div>
         </div>
     );

@@ -1,17 +1,12 @@
-import React, {useEffect , useState} from 'react';
-// import axios from 'axios';
-import './ItemListContainer.css'
+import React ,{useEffect , useState} from 'react';
+import './ItemListContainer.css';
 
-import Item from './Item';
+import ItemDetail from './ItemDetail';
 
 
-const ItemList = () => {
+const ItemDetailContainer = () => {
 
     const [articulos, setArticulos] = useState ([])
-
-    // const [data, setData]= useState ({});
-
-    
 
     useEffect(()=>{
         setTimeout(()=>{
@@ -23,16 +18,17 @@ const ItemList = () => {
         // .then((res) => setData(res.data));
         
     }, []);
-    
+
+
     return (
         <div className='ItemsList'>
             <div className='ItemsCards'>
                 {articulos.map((articulo)=>{
-                    return <Item data={articulo} key={articulo.id}/>;
+                    return <ItemDetail data={articulo} key={articulo.id}/>;
                 })} 
             </div>
         </div>
     )
 }
 
-export default ItemList;
+export default ItemDetailContainer;

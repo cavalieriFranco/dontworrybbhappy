@@ -1,36 +1,34 @@
 import React from 'react';
 import './App.css';
 
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
+
+import About from './views/About';
+import Home from './views/Home';
+import Details from './views/Details';
+
+import NavBar from './components/NavBar';
 import Header from './components/Header';
-import ItemListContainer from './components/ItemListContainer';
+
 
 const App = () => {
 
   return (
+    <Router>
         <div className='App'>
-            <Header 
-            title="Don't Worry Bb Happy"
-            />
-
-            <div className='User-Section'>
-               <ItemListContainer
-                name='Pañales Huggies Recien Nacido' 
-                date='40 unidades' 
-                description='$850' 
-                img="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"/>
-               <ItemListContainer
-                name='Esterilizador y Calentador' 
-                date='Apto Mamaderas, tetinas y pezoneras' 
-                description='$3500' 
-                img="https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"/>
-              <ItemListContainer
-                name='Practicuna Colecho' 
-                date='Hasta 10kg' 
-                description='$15800' 
-                img="https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"/>
-            </div>
+        <Header/>
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/detail" element={<Details/>}/>
+          <Route path="/about" element={<About/>}/>
+        </Routes>
         </div>
+    </Router>
+    
   )
 }
 
 export default App;
+
