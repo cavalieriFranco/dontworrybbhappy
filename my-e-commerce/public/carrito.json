@@ -1,125 +1,144 @@
 [
     {
-      "precio": 2000,
       "id": 0,
+      "precio": 2000,
+      "category": "pañales" ,
       "title": "Pañales Huggies Recien Nacido",
       "description":"dafafaf",
       "thumbnailUrl": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"
     },
     {
-      "precio": 1700,
       "id": 1,
+      "precio": 1700,
+      "category": "esterilizador" ,
       "title": "Esterilizador y Calentador",
       "description":"adfaffaf",
       "thumbnailUrl": "https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"
     },
     {
-      "precio": 1200,
       "id": 2,
-      "title": "Practicuna Colecho",
-      "description":"dafafaf",
-      "thumbnailUrl": "https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"
-    },
-    {
-      "precio": 1700,
-      "id": 3,
-      "title": "Pañales Huggies Recien Nacido",
-      "description":"dafafaf",
-      "thumbnailUrl":"https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"
-    },
-    {
-      "precio": 1100,
-      "id": 4,
-      "title": "Esterilizador y Calentador",
-      "description":"dafafaf",
-      "thumbnailUrl": "https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"
-    },
-    {
-      "precio": 920,
-      "id": 5,
-      "title": "Practicuna Colecho",
-      "description":"dafafaf",
-      "thumbnailUrl": "https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"
-    },
-    {
-      "precio": 35100,
-      "id": 6,
-      "title": "Pañales Huggies Recien Nacido",
-      "description":"dafafaf",
-      "thumbnailUrl": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"
-    },
-    {
-      "precio": 24850,
-      "id": 7,
-      "title": "Esterilizador y Calentador",
-      "description":"dafafaf",
-      "thumbnailUrl": "https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"
-    },
-    {
-      "precio": 18350,
-      "id": 8,
-      "title": "Practicuna Colecho",
-      "description":"dafafaf",
-      "thumbnailUrl": "https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"
-    },
-    {
-      "precio": 300,
-      "id": 9,
-      "title": "Pañales Huggies Recien Nacido",
-      "description":"dafafaf",
-      "thumbnailUrl": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"
-    },
-    {
-      "precio": 750,
-      "id": 10,
-      "title": "Esterilizador y Calentador",
-      "description":"dafafaf",
-      "thumbnailUrl": "https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"
-    },
-    {
-      "precio": 5500,
-      "id": 11,
-      "title": "Practicuna Colecho",
-      "description":"dafafaf",
-      "thumbnailUrl": "https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"
-    },
-    {
       "precio": 1200,
-      "id": 12,
+      "category": "cunas" ,
+      "title": "Practicuna Colecho",
+      "description":"dafafaf",
+      "thumbnailUrl": "https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"
+    },
+    {
+      "id": 3,
+      "precio": 1700,
+      "category": "pañales" ,
       "title": "Pañales Huggies Recien Nacido",
       "description":"dafafaf",
       "thumbnailUrl":"https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"
     },
     {
+      "id": 4,
       "precio": 1100,
+      "category": "esterilizador" ,
+      "title": "Esterilizador y Calentador",
+      "description":"dafafaf",
+      "thumbnailUrl": "https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"
+    },
+    {
+      "id": 5,
+      "precio": 920,
+      "category": "cunas" ,
+      "title": "Practicuna Colecho",
+      "description":"dafafaf",
+      "thumbnailUrl": "https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"
+    },
+    {
+      "id": 6,
+      "precio": 35100,
+      "category": "pañales" ,
+      "title": "Pañales Huggies Recien Nacido",
+      "description":"dafafaf",
+      "thumbnailUrl": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"
+    },
+    {
+      "id": 7,
+      "precio": 24850,
+      "category": "esterilizador" ,
+      "title": "Esterilizador y Calentador",
+      "description":"dafafaf",
+      "thumbnailUrl": "https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"
+    },
+    {
+      "id": 8,
+      "precio": 18350,
+      "category": "cunas" ,
+      "title": "Practicuna Colecho",
+      "description":"dafafaf",
+      "thumbnailUrl": "https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"
+    },
+    {
+      "id": 9,
+      "precio": 300,
+      "category": "pañales" ,
+      "title": "Pañales Huggies Recien Nacido",
+      "description":"dafafaf",
+      "thumbnailUrl": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"
+    },
+    {
+      "id": 10,
+      "precio": 750,
+      "category": "esterilizador" ,
+      "title": "Esterilizador y Calentador",
+      "description":"dafafaf",
+      "thumbnailUrl": "https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"
+    },
+    {
+      "id": 11,
+      "precio": 5500,
+      "category": "cunas" ,
+      "title": "Practicuna Colecho",
+      "description":"dafafaf",
+      "thumbnailUrl": "https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"
+    },
+    {
+      "id": 12,
+      "precio": 1200,
+      "category": "pañales" ,
+      "title": "Pañales Huggies Recien Nacido",
+      "description":"dafafaf",
+      "thumbnailUrl":"https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"
+    },
+    {
       "id": 13,
+      "precio": 1100,
+      "category": "esterilizador" ,
       "title": "Esterilizador y Calentador",
       "description":"dafafaf",
       "thumbnailUrl":"https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"
     },
     {
-      "precio": 800,
       "id": 14,
+      "precio": 800,
+      "category": "cunas" ,
       "title": "Practicuna Colecho",
+      "description":"adfaffaf",
       "thumbnailUrl": "https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"
     },
     {
-      "precio": 580,
       "id": 15,
+      "precio": 580,
+      "category": "pañales" ,
       "title": "Pañales Huggies Recien Nacido",
       "description":"dafafaf",
       "thumbnailUrl": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2871582_f.jpg"
     },
     {
-      "precio": 780,
       "id": 16,
+      "precio": 780,
+      "category": "esterilizador" ,
       "title": "Esterilizador y Calentador",
       "description":"dafafaf",
       "thumbnailUrl": "https://www.farmacialeloir.com.ar/img/articulos/2020/09/tc_1aspen_esterilizador_calentador_de_mamaderas_electrico_2.jpg"
     },
     {
-      "precio": 700,
       "id": 17,
+      "precio": 700,
+      "category": "cunas" ,
       "title": "Practicuna Colecho",
       "description":"dafafaf",
       "thumbnailUrl": "https://i2.wp.com/elultimokoala.com/blog/wp-content/uploads/2020/10/minicuna-colecho-shnuggle-7.jpg?resize=512%2C512&ssl=1"

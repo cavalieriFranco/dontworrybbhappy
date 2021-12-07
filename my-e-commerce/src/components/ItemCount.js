@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import './ItemCount.css';
+import {Link} from 'react-router-dom';
 
 
-const ItemCount = ({stock, initial, onAdd}) => {
+const ItemCount = ({stock, initial}) => {
   const [counter, setCounter] = useState (initial);
 
   const sumaCounter = () =>{
@@ -22,9 +23,15 @@ const ItemCount = ({stock, initial, onAdd}) => {
             <button onClick={sumaCounter}>Agregar</button>
             <p> Cantidad : {counter}</p>
             <button onClick={restaCounter}>Quitar</button>
+            <br></br>
+            <Link to="/cart">
+              <button>Terminar mi compra</button>
+            </Link> 
           </div>
         </div>
     );
 }
 
 export default ItemCount;
+
+
