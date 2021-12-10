@@ -25,7 +25,7 @@ const ItemCount = ({stock, initial}) => {
             <button onClick={restaCounter}>Quitar</button>
             <br></br>
             <Link to="/cart">
-              <button>Terminar mi compra</button>
+              <button>Agregar al carrito</button>
             </Link> 
           </div>
         </div>

@@ -3,6 +3,9 @@ import { Card, Image } from 'semantic-ui-react';
 import ItemCount from './ItemCount';
 
 
+
+
+
 const ItemDetail = ({data}) => (
   <div>
     <Card>

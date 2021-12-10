@@ -2,6 +2,7 @@ import React ,{useEffect , useState} from 'react';
 import axios from 'axios';
 import './ItemListContainer.css';
 
+
 import ItemDetail from './ItemDetail';
 
 
@@ -24,7 +25,7 @@ const ItemDetailContainer = () => {
         <div className='ItemsList'>
             <div className='ItemsCards'>
                 {articulos.map((articulo)=>{
-                    return <ItemDetail data={articulo} key={articulo.id[0]}/>;
+                    return <ItemDetail data={articulo} key={articulo.id}/>;
                 })} 
             </div>
         </div>

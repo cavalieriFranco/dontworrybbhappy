@@ -4,6 +4,7 @@ import './App.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 
+
 import About from './views/About';
 import Home from './views/Home';
 import Details from './views/Details';
@@ -16,6 +17,7 @@ import Header from './components/Header';
 const App = () => {
 
   return (
+  
     <Router>
         <div className='App'>
         <Header/>
@@ -28,7 +30,7 @@ const App = () => {
         </Routes>
         </div>
     </Router>
-    
+  
   )
 }
 
