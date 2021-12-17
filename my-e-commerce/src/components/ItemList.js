@@ -1,34 +1,39 @@
 import React, {useEffect , useState} from 'react';
-import axios from 'axios';
 import {Link} from 'react-router-dom';
 import './ItemListContainer.css'
+import  { db } from '../firebase/firebaseConfig';
+import { collection, query, getDocs } from 'firebase/firestore';
 
 import Item from './Item';
 
 
 const ItemList = () => {
 
-    const [articulos, setArticulos] = useState ([])
-
-
+    const [artData, setartData] = useState ([]);
     
 
     useEffect(()=>{
-        setTimeout(()=>{
-        axios('http://127.0.0.1:5500/my-e-commerce/public/carrito.json')
-        .then((res) => setArticulos (res.data));
-        },1000);
-     
+        const getProducts = async() =>{
+           
+                const q = query (collection(db, 'bbhappy'));
+                const docs = [];
+                const querySnapshot = await getDocs (q);
+                querySnapshot.forEach((doc) =>{
+                    docs.push({...doc.data(), id: doc.id});
+                });
+                setartData (docs);
+        };
+        getProducts();
     }, []);
     
     return (
         <div className='ItemsList'>
             <div className='ItemsCards'>
-                {articulos.map((articulo)=>{
+                {artData.map((article)=>{
                     return (
-                        <div key={articulo.id}>
-                            <Link to={"/detail"}>
-                                <Item data={articulo}/>;
+                        <div>
+                            <Link to={`/detail/${article.id}`} key={article.id}>
+                                <Item data={article}/>;
                             </Link>
                         </div>
                     );
@@ -39,3 +44,8 @@ const ItemList = () => {
 };
 
 export default ItemList;
+
+
+
+
+

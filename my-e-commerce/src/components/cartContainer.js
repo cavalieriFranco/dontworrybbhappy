@@ -1,29 +1,48 @@
-import React, { useContext } from 'react';
-import { ItemsContext } from '../CartContext';
-import {Link} from 'react-router-dom';
+import React ,{useEffect , useState} from 'react';
+
+import './ItemListContainer.css';
+import  { db } from '../firebase/firebaseConfig';
+import { collection, query, getDocs} from 'firebase/firestore';
+
+import { useParams } from 'react-router';
 
 import CartItems from './cartItems';
 
 const CartContainer = () => {
-	const [items, setItems] = useContext(ItemsContext);
+	const [artData, setartData] = useState ([]);
 
-	return (
-		<div>
-			<button onClick={() => setItems([])}>Vaciar Carrito</button>
-			<Link to="/">
-              <button>Volver</button>
-            </Link> 
-			<hr></hr>
-			{items.map((item) => {
-				return <CartItems data={item} />;
-			})}
-			<ul>
-                <li>Total : $10000</li>
-                <li>Total + Iva: $12100</li>
-            </ul>
-		</div>
-	);
-};
+    let paramsID = useParams();
+
+    const artDataFiltered = artData.filter((article)=>{
+        return article.id === paramsID.id;
+    })
+    
+
+    useEffect(()=>{
+        const getProducts = async() =>{
+           
+                const q = query (collection(db, 'bbhappy'));
+                const docs = [];
+                const querySnapshot = await getDocs (q);
+                querySnapshot.forEach((doc) =>{
+                    docs.push({...doc.data(), id: doc.id});
+                });
+                setartData (docs);
+        };
+        getProducts();
+    }, []);
+
+
+    return (
+        <div className='cardDetail'>
+            <div>
+                {artDataFiltered.map((article)=>{
+                    return <CartItems data={article} key={article.id}/>;
+                })} 
+            </div>
+        </div>
+    )
+}
 
 export default CartContainer;
 

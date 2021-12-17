@@ -1,7 +1,10 @@
 import React ,{useEffect , useState} from 'react';
-import axios from 'axios';
-import './ItemListContainer.css';
 
+import './ItemListContainer.css';
+import  { db } from '../firebase/firebaseConfig';
+import { collection, query, getDocs} from 'firebase/firestore';
+
+import { useParams } from 'react-router';
 
 import ItemDetail from './ItemDetail';
 
@@ -9,23 +12,35 @@ import ItemDetail from './ItemDetail';
 const ItemDetailContainer = () => {
 
 
-    const [articulos, setArticulos] = useState ([])
+    const [artData, setartData] = useState ([]);
+
+    let paramsID = useParams();
+
+    const artDataFiltered = artData.filter((article)=>{
+        return article.id === paramsID.id;
+    })
+    
 
     useEffect(()=>{
-        setTimeout(()=>{
-        axios('http://127.0.0.1:5500/my-e-commerce/public/carrito.json')
-        .then((res) => setArticulos (res.data));
-        },1000);
-     
-        
+        const getProducts = async() =>{
+           
+                const q = query (collection(db, 'bbhappy'));
+                const docs = [];
+                const querySnapshot = await getDocs (q);
+                querySnapshot.forEach((doc) =>{
+                    docs.push({...doc.data(), id: doc.id});
+                });
+                setartData (docs);
+        };
+        getProducts();
     }, []);
 
 
     return (
-        <div className='ItemsList'>
-            <div className='ItemsCards'>
-                {articulos.map((articulo)=>{
-                    return <ItemDetail data={articulo} key={articulo.id}/>;
+        <div className='cardDetail'>
+            <div>
+                {artDataFiltered.map((article)=>{
+                    return <ItemDetail data={article} key={article.id}/>;
                 })} 
             </div>
         </div>

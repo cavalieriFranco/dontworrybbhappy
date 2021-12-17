@@ -15,24 +15,10 @@ const CartItems = ({data}) =>{
                         size='mini'
                         src={data.img}
                     />
-                    <Card.Header>{data.name}</Card.Header>
-                    <Card.Meta>Cantidad : 3</Card.Meta>
+                    <Card.Header>{data.title}</Card.Header>
+                    <Card.Meta></Card.Meta>
                     <Card.Description>
                         $ {data.price}
-                    </Card.Description>
-                </Card.Content>
-            </Card>
-            <Card>
-                <Card.Content>
-                    <Image
-                    floated='right'
-                    size='mini'
-                    src={data.img}
-                    />
-                    <Card.Header>{data.name}</Card.Header>
-                    <Card.Meta>Cantidad : 3</Card.Meta>
-                    <Card.Description>
-                         $ {data.price}
                     </Card.Description>
                 </Card.Content>
             </Card>

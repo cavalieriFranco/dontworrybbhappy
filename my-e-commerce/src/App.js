@@ -4,7 +4,6 @@ import './App.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 
-
 import About from './views/About';
 import Home from './views/Home';
 import Details from './views/Details';
@@ -24,7 +23,7 @@ const App = () => {
         <NavBar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/detail" element={<Details/>}/>
+          <Route path="/detail/:id" element={<Details/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/cart" element= {<Cart/>}/>
         </Routes>

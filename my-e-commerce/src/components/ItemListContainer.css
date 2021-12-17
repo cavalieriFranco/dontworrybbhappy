@@ -1,13 +1,16 @@
 .ItemList{
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    margin-left: 70px;
     padding:25px;
+    
 }
 .ItemsCards{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin:20px;
+}
+.cardDetail{
+    margin-left: 25%;
+    margin-right: 25%;
 }
